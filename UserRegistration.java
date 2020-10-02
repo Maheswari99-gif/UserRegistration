@@ -5,7 +5,7 @@ public class UserRegistration{
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter Your Password");
 		String p=s.next();
-		String check="[A-Za-z]{8,}$";
+		String check="[A-Z]{1}[A-Za-z]{7,}$";
 		if(p.matches(check))
 		System.out.println("Valid");
 		else
