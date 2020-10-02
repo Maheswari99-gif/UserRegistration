@@ -5,7 +5,7 @@ public class UserRegistration{
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter First Name");
 		String f=s.next();
-		String check="[A-Z]{1}[a-z]*";
+		String check="[A-Z]{1}[A-Za-z]{2,}";
 		Pattern p=Pattern.compile(check);
 		Matcher m=p.matcher(f);
 		if(m.matches())
